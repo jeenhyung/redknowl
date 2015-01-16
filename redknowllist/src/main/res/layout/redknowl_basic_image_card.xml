@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<kr.co.ibreeze.redknowllist.view.RedknowlImageCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation = "vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileimg"
+                android:layout_margin="5dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/user_empty"
+
+
+                app:border_width="1dp"
+                app:border_color="#F4F4F4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                android:textSize="@dimen/username_size"
+                android:layout_toRightOf="@id/profileimg"
+                android:layout_marginTop="2dp"
+                android:id="@+id/userNameTextView"
+                android:textColor="@color/black_button"
+                tools:text="Username"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePostText"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/small_padding"
+                android:paddingRight="@dimen/small_padding"
+                android:paddingTop="@dimen/small_padding"
+                android:textSize="@dimen/date_size"
+                android:textColor="@color/description_color"
+                tools:text="2014-12-28 14:16"/>
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+
+                android:layout_below="@id/profileimg"
+              />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentTextView"
+                android:layout_below="@id/imageView"
+                android:padding="@dimen/small_padding"
+                android:textSize="@dimen/content_size"
+                android:textColor="@color/description_color"
+                tools:text="This is content in a Card"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_state"
+                android:layout_below="@id/contentTextView"
+
+                android:textSize="@dimen/state_size"
+                android:textColor="@color/description_color"
+                android:paddingLeft="@dimen/small_padding"
+                tools:text="좋아요 10개 댓글 5개"/>
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_state"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="좋아요"
+                    />
+                <Button
+                    android:id="@+id/commentBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="댓 글"
+                    />
+                <Button
+                    android:id="@+id/scrapeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="스크랩"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+</kr.co.ibreeze.redknowllist.view.RedknowlImageCardView>

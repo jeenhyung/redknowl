@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpconlib/httpconlib.iml" filepath="$PROJECT_DIR$/httpconlib/httpconlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/ptr-lib/ptr-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redknowl.iml" filepath="$PROJECT_DIR$/redknowl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redknowllist/redknowllist.iml" filepath="$PROJECT_DIR$/redknowllist/redknowllist.iml" />
+    </modules>
+  </component>
+</project>
+

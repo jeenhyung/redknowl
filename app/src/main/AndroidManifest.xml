@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.ibreeze.redknowl" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="kr.co.ibreeze.httpconlib.RestCommuApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+
+        <activity
+            android:name=".Activities.MainFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.LoginActivity"/>
+
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="MainFragmentActivity"
+            android:parentActivityName=".Activities.MainFragmentActivity" >
+        </activity>
+
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:label="SearchActivity"
+            android:parentActivityName=".Activities.MainFragmentActivity" >
+        </activity>
+        <activity
+            android:name=".Activities.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:parentActivityName=".Activities.MainFragmentActivity" >
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+    </application>
+
+</manifest>
